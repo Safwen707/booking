@@ -1,10 +1,10 @@
 const puppeteer = require("puppeteer");
 require("dotenv").config();
-// function delay(time) {
-//   return new Promise(function (resolve) {
-//     setTimeout(resolve, time);
-//   });
-// }
+function delay(time) {
+  return new Promise(function (resolve) {
+    setTimeout(resolve, time);
+  });
+ }
 // const type_destination = async function (page) {
 //   await page.type('input[name="ss"]', "douz", { delay:400 });
 //   console.log("Typed destination 'Sousse'.");
@@ -352,8 +352,55 @@ async function get_rate_details(hotels) {
       hotels[i]["rate_details"] = rate_details;
       //-----------------------selection de reviews_details------------------------
       let k;
-      await page.waitForSelector("#reviewCardsSection");
-      reviews_details = await page.evaluate(
+      let reviews_details =[]
+      await page.waitForSelector("#reviewCardsSection")
+      let isListOfNavigationExist=await page.evaluate(()=>{
+        let Window = document.querySelectorAll("#reviewCardsSection")[0];
+      console.log(
+        "🚀 ~ review_details=awaitpage.evaluate ~  window :",
+        Window
+      );
+      let list_of_navigation = Window.querySelectorAll("ol")[0];
+      console.log(
+        "🚀 ~ review_details=awaitpage.evaluate ~ list_of_navigation:",
+        list_of_navigation
+      );
+      if (list_of_navigation != undefined) {
+        let ol_elements = Array.from(
+          list_of_navigation.querySelectorAll("li")
+        );
+        console.log(
+          "🚀 ~ review_details=awaitpage.evaluate ~ ol_elements:",
+          ol_elements
+        );
+        let nbr_of_reviews_page = parseInt(
+          ol_elements[ol_elements.length - 1].textContent.trim()
+        );
+        console.log(
+          "🚀 ~ review_details=awaitpage.evaluate ~ nbr_of_reviews_page:",
+          nbr_of_reviews_page
+        ); 
+        list_of_navigation={test:true,nbr_of_reviews_page:nbr_of_reviews_page}
+               
+      } else {
+        list_of_navigation={test:false}
+      }
+      return list_of_navigation
+      })
+      async function goToNextPage(page, nextPageSelector) {
+        await Promise.all([
+          page.click(nextPageSelector),
+          page.waitForNavigation({ waitUntil: 'networkidle0' })
+        ]);}
+
+      if(isListOfNavigationExist.test)
+        {
+          let nbr_of_reviews_page=isListOfNavigationExist.nbr_of_reviews_page
+          console.log("🚀 ~ get_rate_details ~ nbr_of_reviews_page:", nbr_of_reviews_page)
+      for(j=0;j< nbr_of_reviews_page;j++){
+        console.log(j)
+        await page.waitForSelector("#reviewCardsSection");
+       reviews_details = await page.evaluate(
         (review_details, reviews_details, k,j) => {
           
           let review_cards_selector = "[data-testid=review-cards]";
@@ -369,6 +416,7 @@ async function get_rate_details(hotels) {
             return date_string;
           };
           const get_reviews_details = function (reviews_details) {
+            let Window = document.querySelectorAll("#reviewCardsSection")[0];
             let review_cards_array_element = Array.from(
               Window.querySelectorAll(review_cards_selector)
             )[0];
@@ -406,63 +454,9 @@ async function get_rate_details(hotels) {
             
             return reviews_details
           };
-          let Window = document.querySelectorAll("#reviewCardsSection")[0];
-          console.log(
-            "🚀 ~ review_details=awaitpage.evaluate ~  window :",
-            Window
-          );
-          let list_of_navigation = Window.querySelectorAll("ol")[0];
-          console.log(
-            "🚀 ~ review_details=awaitpage.evaluate ~ list_of_navigation:",
-            list_of_navigation
-          );
-          if (list_of_navigation != undefined) {
-            let ol_elements = Array.from(
-              list_of_navigation.querySelectorAll("li")
-            );
-            console.log(
-              "🚀 ~ review_details=awaitpage.evaluate ~ ol_elements:",
-              ol_elements
-            );
-            let nbr_of_reviews_page = parseInt(
-              ol_elements[ol_elements.length - 1].textContent.trim()
-            );
-            console.log(
-              "🚀 ~ review_details=awaitpage.evaluate ~ nbr_of_reviews_page:",
-              nbr_of_reviews_page
-            );
-            function delay(time) {
-                return new Promise(function (resolve) {
-                  setTimeout(resolve, time);
-                });
-              }
-             const  wait =async(time)=>{
-                await delay(time)
-              }
-                             
-            for(j=0;j<3;j++){
-                console.log(j)
-                
-                reviews_details = get_reviews_details(reviews_details);
-                console.log("🚀 ~ get_rate_details ~ reviews_details:", reviews_details)
-               
-                wait(1500)
-                 let next_page_selector='button.dba1b3bddf.e99c25fd33.aabf155f9a.f42ee7b31a.a86bcdb87f.e137a4dfeb.e2a8616b58'
-                 console.log("🚀 ~ get_rate_details ~ next_page_selector:", next_page_selector)
-                 wait(1500)
-                let next_button= document.querySelector(next_page_selector)
-                console.log("🚀 ~ get_rate_details ~ next_button:", next_button)
-                wait(10000)
-                next_button.click()
-                wait(10000) 
-               
-            }
-                
-
-          } else {
-            console.log("list_of_navigation: undefined");
-            reviews_details = get_reviews_details(reviews_details);
-          }
+    
+          reviews_details = get_reviews_details(reviews_details);
+          console.log("🚀 ~ get_rate_details ~ reviews_details:", reviews_details)
           return reviews_details
         },
         review_details,
@@ -470,7 +464,21 @@ async function get_rate_details(hotels) {
         k,
         j
       )
-      ;
+        
+        console.log("🚀 ~ get_rate_details ~ reviews_details:", reviews_details)
+        let  next_page_selector=`#reviewCardsSection > div.e01df12ddf.a0914461b0.d46a3604b5.ba1c6fdc7f.f550b7da28.b9a2fd8068.fba51e4bf7 > div.ff523d0f74 > div > div > div.c736558810 > ol > li:nth-child(${j+2}) > button`
+        await page.waitForSelector( next_page_selector,{ visible: true, timeout: 60000 })  
+        // let next_button= await page.$eval(next_page_selector,el=>{return el})
+        await delay(1000)
+        await page.click(next_page_selector)
+        await delay(2000)
+         
+        
+        
+       
+    }}
+      
+      
       hotels[i]["reviews_details"] = reviews_details;
     } else {
       hotels[i]["rate_details"] = {
