@@ -6,7 +6,7 @@ require("dotenv").config();
 //   });
 // }
 // const type_destination = async function (page) {
-//   await page.type('input[name="ss"]', "douz", { delay:400 }); 
+//   await page.type('input[name="ss"]', "douz", { delay:400 });
 //   console.log("Typed destination 'Sousse'.");
 // };
 // const autocomplete = async function (page) {
@@ -59,11 +59,10 @@ require("dotenv").config();
 
 //   const page = await browser.newPage();
 //   console.log("New page created.");
- 
 
 //   await page.goto(url, { waitUntil: "networkidle2", timeout: 60000 });
 //   console.log("Navigated to target URL.");
-     
+
 //   //-------------------bouton x-----------------
 //   await page.waitForSelector(
 //     "#b2indexPage > div.a1b9d2f057.c20dffcd7d > div > div > div > div.f39d206191 > div.d5b096843d.a3b6061a26.f3ec6922b3 > div > button > span > span > svg"
@@ -74,14 +73,14 @@ require("dotenv").config();
 //   console.log("onglet fermé");
 //   //-------------------destination-----------------
 //   await type_destination(page);
-  
+
 //   //-------------------autocomplete result -----------------
 //   autocomplete(page);
 
 //   //-------------------date-----------------
 //     await page.waitForSelector("button.ead010d0b7.caf094216b.e37cfa350e");
 //   await page.click("button.ead010d0b7.caf094216b.e37cfa350e");
-// await page.click("button.ead010d0b7.caf094216b.e37cfa350e");   
+// await page.click("button.ead010d0b7.caf094216b.e37cfa350e");
 
 //   //-------------------search-----------------
 //   await search(page);
@@ -188,9 +187,6 @@ require("dotenv").config();
 // }
 // let hotels = getGlobalRate(process.env.urlBooking);
 
-
-
-
 const hotels = [
   {
     name: "El Mouradi Douz",
@@ -288,7 +284,7 @@ const hotels = [
     reviews_nbr: 2,
     link: "https://www.booking.com/hotel/tn/residences-porte-de-desert-douz.html?label=gen173nr-1FCAEoggI46AdIM1gEaOIBiAEBmAExuAEXyAEM2AEB6AEB-AECiAIBqAIDuAKCxq61BsACAdICJDU5ZDg2M2VhLWZmNzYtNGM0Yi05NmVhLWNlZTNmMjFlNTQ1YtgCBeACAQ&aid=304142&ucfs=1&arphpl=1&dest_id=-724831&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=16&hapos=16&sr_order=popularity&srpvid=ada66984401c05c1&srepoch=1722524454&from=searchresults",
   },
-];//resultat dela premire fct
+]; //resultat dela premire fct
 
 async function get_rate_details(hotels) {
   const selector_box =
@@ -303,24 +299,27 @@ async function get_rate_details(hotels) {
     location: 0,
     Free_Wifi: 0,
   };
-  let review_details={
-    rate:0,
-    date:""
-}
-let reviews_details=[]// elle contient plusieures review_details
-  for (let i =0; i <2; i++) {//hotels.length
-    if (hotels[i].rate_note != null) {//pur tester le hotels qui ont rating
+  let review_details = {
+    review_score: 0,
+    review_date: "",
+  };
+  ; // elle contient plusieures review_details
+  for (let i = 0; i < 1; i++) {
+    let reviews_details = []
+    //hotels.length
+    if (hotels[i].rate_note != null) {
+      //pur tester le hotels qui ont rating
       let url = hotels[i].link;
-//------------------------------ouvrir la page de l'hotel---------------------
+      //------------------------------ouvrir la page de l'hotel---------------------
       const browser = await puppeteer.launch({
-            headless: false,
-        });
-      console.log("Browser launched."); 
+        headless: false,
+      });
+      console.log("Browser launched.");
       const page = await browser.newPage();
       console.log("New page created.");
       await page.goto(url, { waitUntil: "networkidle2", timeout: 60000 });
       console.log("Navigated the hotel .");
-//------------------------------ouvrir lafenetre des review---------------------
+      //------------------------------ouvrir lafenetre des review---------------------
       await page.waitForSelector("[data-testid=review-score-right-component]");
       await page.focus("[data-testid=review-score-right-component]", {
         delay: 100,
@@ -328,86 +327,189 @@ let reviews_details=[]// elle contient plusieures review_details
       await page.click("[data-testid=review-score-right-component]", {
         delay: 100,
       });
-//------------------------------fenetre des review apparus--------------------------
+      //------------------------------fenetre des review apparus--------------------------
 
-//-----------------------selection de rate_details------------------------
+      //-----------------------selection de rate_details------------------------
       let j;
-    //   rate_details = await page.evaluate(
-    //     (rate_details, selector_details, selector_box, j) => {
-    //       for (j = 0; j < 7; j++) {
-    //         let details_box = document.querySelectorAll(selector_box)[j];
-    //         // console.log("🚀 ~ get_rate_details ~ details_box:", details_box)
-    //         let details = details_box.querySelectorAll(selector_details)[0]; //7.7 8.6 ....
-    //         let key = Object.keys(rate_details)[j]; // staf Facilities.  ...
-    //         rate_details[key] = details.textContent.trim();
-    //         // console.log("🚀 ~ get_rate_details ~ details:", details)
-    //         // console.log("🚀 ~ get_rate_details ~  rate_details:",  rate_details)
-    //       }
-    //       return rate_details;
-    //     },
-    //     rate_details,
-    //     selector_details,
-    //     selector_box,
-    //     j
-    //   )
-      hotels[i]["rate_details"]=rate_details
+      //   rate_details = await page.evaluate(
+      //     (rate_details, selector_details, selector_box, j) => {
+      //       for (j = 0; j < 7; j++) {
+      //         let details_box = document.querySelectorAll(selector_box)[j];
+      //         // console.log("🚀 ~ get_rate_details ~ details_box:", details_box)
+      //         let details = details_box.querySelectorAll(selector_details)[0]; //7.7 8.6 ....
+      //         let key = Object.keys(rate_details)[j]; // staf Facilities.  ...
+      //         rate_details[key] = details.textContent.trim();
+      //         // console.log("🚀 ~ get_rate_details ~ details:", details)
+      //         // console.log("🚀 ~ get_rate_details ~  rate_details:",  rate_details)
+      //       }
+      //       return rate_details;
+      //     },
+      //     rate_details,
+      //     selector_details,
+      //     selector_box,
+      //     j
+      //   )
+      hotels[i]["rate_details"] = rate_details;
       //-----------------------selection de reviews_details------------------------
-     
-      review_details=await page.evaluate((review_details,reviews_details)=>{
-      
-        let list_of_navigation = (document.getElementsByTagName('ol'))//car elle retourn HTML collection
-
-        console.log("🚀 ~ review_details=awaitpage.evaluate ~ list_of_navigation:", (list_of_navigation))
-        // let list_of_navigation=Array.from(div_of_navigation.querySelectorAll(selector_liste_of_navigation))
-        // let nbr_of_reviews_page=(list_of_navigation[list_of_navigation.length]).textContent.trim()
-        // console.log("🚀 ~ review_details=awaitpage.evaluate ~ nbr_of_reviews_page:", nbr_of_reviews_page)
-
-      },review_details,reviews_details)
-     
-
-    }else{
-        hotels[i]["rate_details"]={
-
-            Staff: 0,
-            Facilities: 0,
-            Cleanliness: 0,
-            Comfort: 0,
-            Value_for_money: 0,
-            location: 0,
-            Free_Wifi: 0,
-          };
+      let k;
+      await page.waitForSelector("#reviewCardsSection");
+      reviews_details = await page.evaluate(
+        (review_details, reviews_details, k,j) => {
           
+          let review_cards_selector = "[data-testid=review-cards]";
+          let review_card_selector = "[data-testid=review-card]";
+          let review_date_selector = "[data-testid=review-date]";
+          let review_score_selector = "[data-testid=review-score]";
+          const formate_date = function (date_string) {
+            const date = new Date(date_string);
+            const day = String(date.getDate()).padStart(2, "0");
+            const month = String(date.getMonth() + 1).padStart(2, "0"); // Months are 0-based
+            const year = date.getFullYear();
+            date_string = `${day}/${month}/${year}`;
+            return date_string;
+          };
+          const get_reviews_details = function (reviews_details) {
+            let review_cards_array_element = Array.from(
+              Window.querySelectorAll(review_cards_selector)
+            )[0];
+            console.log("🚀 ~ get_rate_details ~ review_cards_array_element:", review_cards_array_element)
+            let review_cards_array=Array.from(review_cards_array_element.querySelectorAll(review_card_selector))
+           
+           
+            for (k = 0; k < review_cards_array.length; k++) {
+             
+              let review_card = review_cards_array[k];
+              
+              let review_date = review_card
+                .querySelectorAll(review_date_selector)[0]
+                .textContent.trim(); // Reviewed: June 16, 2024
+              review_date = review_date.split(": ")[1];
+
+              review_date = formate_date(review_date);
+             
+
+              let review_score = parseInt(
+                review_card
+                  .querySelectorAll(review_score_selector)[0]
+                  .textContent.trim()
+                  .split(" ")[1]
+              );
+              
+
+              review_details = {
+                review_score: review_score,
+                review_date: review_date,
+              };
+              reviews_details.push(review_details);
+              
+            }
+            
+            return reviews_details
+          };
+          let Window = document.querySelectorAll("#reviewCardsSection")[0];
+          console.log(
+            "🚀 ~ review_details=awaitpage.evaluate ~  window :",
+            Window
+          );
+          let list_of_navigation = Window.querySelectorAll("ol")[0];
+          console.log(
+            "🚀 ~ review_details=awaitpage.evaluate ~ list_of_navigation:",
+            list_of_navigation
+          );
+          if (list_of_navigation != undefined) {
+            let ol_elements = Array.from(
+              list_of_navigation.querySelectorAll("li")
+            );
+            console.log(
+              "🚀 ~ review_details=awaitpage.evaluate ~ ol_elements:",
+              ol_elements
+            );
+            let nbr_of_reviews_page = parseInt(
+              ol_elements[ol_elements.length - 1].textContent.trim()
+            );
+            console.log(
+              "🚀 ~ review_details=awaitpage.evaluate ~ nbr_of_reviews_page:",
+              nbr_of_reviews_page
+            );
+            function delay(time) {
+                return new Promise(function (resolve) {
+                  setTimeout(resolve, time);
+                });
+              }
+             const  wait =async(time)=>{
+                await delay(time)
+              }
+                             
+            for(j=0;j<3;j++){
+                console.log(j)
+                
+                reviews_details = get_reviews_details(reviews_details);
+                console.log("🚀 ~ get_rate_details ~ reviews_details:", reviews_details)
+               
+                wait(1500)
+                 let next_page_selector='button.dba1b3bddf.e99c25fd33.aabf155f9a.f42ee7b31a.a86bcdb87f.e137a4dfeb.e2a8616b58'
+                 console.log("🚀 ~ get_rate_details ~ next_page_selector:", next_page_selector)
+                 wait(1500)
+                let next_button= document.querySelector(next_page_selector)
+                console.log("🚀 ~ get_rate_details ~ next_button:", next_button)
+                wait(10000)
+                next_button.click()
+                wait(10000) 
+               
+            }
+                
+
+          } else {
+            console.log("list_of_navigation: undefined");
+            reviews_details = get_reviews_details(reviews_details);
+          }
+          return reviews_details
+        },
+        review_details,
+        reviews_details,
+        k,
+        j
+      )
+      ;
+      hotels[i]["reviews_details"] = reviews_details;
+    } else {
+      hotels[i]["rate_details"] = {
+        Staff: 0,
+        Facilities: 0,
+        Cleanliness: 0,
+        Comfort: 0,
+        Value_for_money: 0,
+        location: 0,
+        Free_Wifi: 0,
+      };
     }
     // console.log("🚀 ~ get_rate_details ~ hotels:", hotels)
-
   }
-  return hotels
+  return hotels;
 }
 
-// const test = async ()=>{
-//     let Hotels=  await  get_rate_details(hotels);
-//     console.log("🚀 ~ Hotels:", Hotels)}
-// test()
+const test = async () => {
+  let Hotels = await get_rate_details(hotels);
+  console.log("🚀 ~ Hotels:", Hotels);
+};
+test();
 
-
-
-obj={
-    name: 'Dessine-moi un Chameau',
-    rate_note: 1,
-    reviews_nbr: 1,
-    link: 'https://www.booking.com/hotel/tn/dessine-moi-un-chameau-douz3.html?label=gen173nr-1FCAEoggI46AdIM1gEaOIBiAEBmAExuAEXyAEM2AEB6AEB-AECiAIBqAIDuAKCxq61BsACAdICJDU5ZDg2M2VhLWZmNzYtNGM0Yi05NmVhLWNlZTNmMjFlNTQ1YtgCBeACAQ&aid=304142&ucfs=1&arphpl=1&dest_id=-724831&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=11&hapos=11&sr_order=popularity&srpvid=ada66984401c05c1&srepoch=1722524454&from=searchresults',
-    rate_details: {
-      Staff: '2,5',
-      Facilities: '2,5',
-      Cleanliness: '2,5',
-      Comfort: '2,5',
-      Value_for_money: '2,5',
-      location: '2,5',
-      Free_Wifi: '2,5'
-    },
-    review_details:{
-        rate:8,
-        date:""
-    }
-  }
-
+obj = {
+  name: "Dessine-moi un Chameau",
+  rate_note: 1,
+  reviews_nbr: 1,
+  link: "https://www.booking.com/hotel/tn/dessine-moi-un-chameau-douz3.html?label=gen173nr-1FCAEoggI46AdIM1gEaOIBiAEBmAExuAEXyAEM2AEB6AEB-AECiAIBqAIDuAKCxq61BsACAdICJDU5ZDg2M2VhLWZmNzYtNGM0Yi05NmVhLWNlZTNmMjFlNTQ1YtgCBeACAQ&aid=304142&ucfs=1&arphpl=1&dest_id=-724831&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=11&hapos=11&sr_order=popularity&srpvid=ada66984401c05c1&srepoch=1722524454&from=searchresults",
+  rate_details: {
+    Staff: "2,5",
+    Facilities: "2,5",
+    Cleanliness: "2,5",
+    Comfort: "2,5",
+    Value_for_money: "2,5",
+    location: "2,5",
+    Free_Wifi: "2,5",
+  },
+  review_details: {
+    rate: 8,
+    date: "",
+  },
+};
