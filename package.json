@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index_1"
+    "start": "nodemon index"
   },
   "author": "",
   "license": "ISC",
@@ -13,6 +13,7 @@
     "cheerio": "^1.0.0-rc.12",
     "colors": "^1.4.0",
     "dotenv": "^16.4.5",
+    "fs": "^0.0.1-security",
     "jsdom": "^24.1.1",
     "mongoose": "^8.5.1",
     "nodemon": "^3.1.4",

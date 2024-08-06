@@ -3,7 +3,10 @@ const hotelSchema=new mongoose.Schema({
    name:String,
    rate_note:Number,
    reviews_nbr:Number,
-   rate_details:Object
+   link:String,
+   rate_details:Object,
+   reviews_details:Array
+
 
    
     

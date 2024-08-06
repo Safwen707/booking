@@ -449,10 +449,9 @@ async function get_rate_details(hotels) {
                 wait(1500)
                  let next_page_selector='button.dba1b3bddf.e99c25fd33.aabf155f9a.f42ee7b31a.a86bcdb87f.e137a4dfeb.e2a8616b58'
                  console.log("🚀 ~ get_rate_details ~ next_page_selector:", next_page_selector)
-                 wait(1500)
+                 
                 let next_button= document.querySelector(next_page_selector)
-                console.log("🚀 ~ get_rate_details ~ next_button:", next_button)
-                wait(10000)
+                
                 next_button.click()
                 wait(10000) 
                
