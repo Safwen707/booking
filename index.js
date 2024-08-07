@@ -5,9 +5,9 @@ function delay(time) {
     setTimeout(resolve, time);
   });
 }
-const type_destination = async function (page) {
-  await page.type('input[name="ss"]', "douz", { delay: 400 });
-  console.log("Typed destination 'Sousse'.");
+const type_destination = async function (page,destination) {
+  await page.type('input[name="ss"]',`${destination}`, { delay: 1000 });
+  console.log( `Typed destination ${destination}`);
 };
 const autocomplete = async function (page) {
   await page.waitForSelector("#autocomplete-result-0");
@@ -49,7 +49,7 @@ const search = async function (page) {
   console.log("search");
 };
 
-async function getGlobalRate(url) {
+async function getGlobalRate(url,destination) {
   const browser = await puppeteer.launch({ headless: false, timeout: 60000 });
 
   console.log("Browser launched.");
@@ -60,16 +60,16 @@ async function getGlobalRate(url) {
   await page.goto(url, { waitUntil: "networkidle2", timeout: 60000 });
   console.log("Navigated to target URL.");
 
-  //-------------------bouton x-----------------
-  await page.waitForSelector(
-    "#b2indexPage > div.a1b9d2f057.c20dffcd7d > div > div > div > div.f39d206191 > div.d5b096843d.a3b6061a26.f3ec6922b3 > div > button > span > span > svg"
-  );
-  await page.click(
-    "#b2indexPage > div.a1b9d2f057.c20dffcd7d > div > div > div > div.f39d206191 > div.d5b096843d.a3b6061a26.f3ec6922b3 > div > button > span > span > svg"
-  );
-  console.log("onglet fermé");
+  // //-------------------bouton x-----------------
+  // await page.waitForSelector(
+  //   "#b2indexPage > div.a1b9d2f057.c20dffcd7d > div > div > div > div.f39d206191 > div.d5b096843d.a3b6061a26.f3ec6922b3 > div > button > span > span > svg"
+  // );
+  // await page.click(
+  //   "#b2indexPage > div.a1b9d2f057.c20dffcd7d > div > div > div > div.f39d206191 > div.d5b096843d.a3b6061a26.f3ec6922b3 > div > button > span > span > svg"
+  // );
+  // console.log("onglet fermé");
   //-------------------destination-----------------
-  await type_destination(page);
+  await type_destination(page,destination);
 
   //-------------------autocomplete result -----------------
   autocomplete(page);
@@ -309,7 +309,8 @@ async function get_rate_details(hotels) {
     review_score: 0,
     review_date: "",
   }; // elle contient plusieures review_details
-  for (let i = 1; i < 3; i++) {
+  if( hotels.length>5){hotels.length=5}
+  for (let i = 1; i < hotels.length; i++) {
     let reviews_details = [];
     //hotels.length
     if (hotels[i].rate_note != null) {
@@ -610,20 +611,25 @@ async function get_rate_details(hotels) {
 }
 
 const test = async () => {
-  let hotels = await getGlobalRate(process.env.urlBooking);
+  for(let i=0;i<24;i++)
+  {
+    let destination=process.env.destinations.split(',')[i]
+    console.log("🚀 ~ test ~ destination:", destination)
+    let hotels = await getGlobalRate(process.env.urlBooking,destination);
   console.log("__________________________________________");
   let Hotels = await get_rate_details(hotels);
   // console.log("🚀 ~ Hotels:", Hotels);
+  console.log("__________________________________________");
   var fs = require('fs');
   var HotelString = JSON.stringify(Hotels); 
-  await fs.writeFile("Hotels.json", HotelString,(err) => {
+  await fs.writeFile(`Hotels_${destination}.json`, HotelString,(err) => {
     if (err) {
       console.error('Error writing to file:', err);
     } else {
       console.log('File has been written');
     }
   });
-  console.log("Hotels data has been written to Hotels.json successfully.")
+  console.log("Hotels data has been written to Hotels.json successfully.")}
 };
 test();
 
