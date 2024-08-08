@@ -1,72 +1,124 @@
 [
-    {
-        "name": "Appartement Vintage",
-        "rate_note": null,
-        "reviews_nbr": 808,
-        "link": "https://www.booking.com/hotel/tn/appartement-vintage.fr.html?label=gen173nr-1BCAEoggI46AdIM1gEaOIBiAEBmAENuAEXyAEM2AEB6AEBiAIBqAIDuAL10s61BsACAdICJGQ2ZjQ1ZjY0LWI2MjUtNDQ3Mi1hNzI1LWEyZWQzYWMwNDg5NtgCBeACAQ&sid=84fca9a8aec2b4193e12954310d07f2f&aid=304142&ucfs=1&arphpl=1&dest_id=-722857&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=dd987846ea4f0d3b&srepoch=1723050398&from=searchresults"
+  {
+    "name": "Chambre d'Hôte Spacieuse à Ennasr 2 avec Internet Fibre Optique, Navette et Vue sur l'Aéroport - Équipements de Bienvenue Inclus",
+    "rate_note": 10,
+    "reviews_nbr": 5,
+    "link": "https://www.booking.com/hotel/tn/residence-eiffel.html?label=gen173nr-1FCAEoggI46AdIM1gEaOIBiAEBmAExuAEXyAEM2AEB6AEB-AECiAIBqAIDuALal9O1BsACAdICJDJhMGIxZjRhLTFkMzAtNGY4My04YjgwLWRjYjhmZDI5ZDkzMdgCBeACAQ&aid=304142&ucfs=1&arphpl=1&dest_id=-722857&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=101960b20bd70157&srepoch=1723124710&from=searchresults"
+  },
+  {
+    "name": "Cozy Apartment Ennasr",
+    "rate_note": 8.3,
+    "reviews_nbr": 6,
+    "link": "https://www.booking.com/hotel/tn/appartement-chambre-salon.html?label=gen173nr-1FCAEoggI46AdIM1gEaOIBiAEBmAExuAEXyAEM2AEB6AEB-AECiAIBqAIDuALal9O1BsACAdICJDJhMGIxZjRhLTFkMzAtNGY4My04YjgwLWRjYjhmZDI5ZDkzMdgCBeACAQ&aid=304142&ucfs=1&arphpl=1&dest_id=-722857&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=2&hapos=2&sr_order=popularity&srpvid=101960b20bd70157&srepoch=1723124710&from=searchresults",
+    "rate_details": {
+      "Staff": "8.3",
+      "Facilities": "9.5",
+      "Cleanliness": "10",
+      "Comfort": "10",
+      "Value_for_money": "9.5",
+      "location": "10",
+      "Free_Wifi": "8.3"
     },
-    {
-        "name": "Chambre d'Hôte Spacieuse à Ennasr 2 avec Internet Fibre Optique, Navette et Vue sur l'Aéroport - Équipements de Bienvenue Inclus",
-        "rate_note": null,
-        "reviews_nbr": 1010,
-        "link": "https://www.booking.com/hotel/tn/residence-eiffel.fr.html?label=gen173nr-1BCAEoggI46AdIM1gEaOIBiAEBmAENuAEXyAEM2AEB6AEBiAIBqAIDuAL10s61BsACAdICJGQ2ZjQ1ZjY0LWI2MjUtNDQ3Mi1hNzI1LWEyZWQzYWMwNDg5NtgCBeACAQ&sid=84fca9a8aec2b4193e12954310d07f2f&aid=304142&ucfs=1&arphpl=1&dest_id=-722857&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=2&hapos=2&sr_order=popularity&srpvid=dd987846ea4f0d3b&srepoch=1723050398&from=searchresults",
-        "rate_details": {
-            "Staff": 0,
-            "Facilities": 0,
-            "Cleanliness": 0,
-            "Comfort": 0,
-            "Value_for_money": 0,
-            "location": 0,
-            "Free_Wifi": 0
-        },
-        "reviews_details": []
+    "reviews_details": [
+      { "review_score": 10, "review_date": "29/06/2024" },
+      { "review_score": 9, "review_date": "14/03/2024" },
+      { "review_score": 10, "review_date": "28/07/2024" },
+      { "review_score": 10, "review_date": "10/06/2024" },
+      { "review_score": 10, "review_date": "03/05/2024" },
+      { "review_score": 1, "review_date": "01/05/2024" }
+    ]
+  },
+  {
+    "name": "The best place with best view",
+    "rate_note": 7.7,
+    "reviews_nbr": 3,
+    "link": "https://www.booking.com/hotel/tn/the-best-place-with-best-view.html?label=gen173nr-1FCAEoggI46AdIM1gEaOIBiAEBmAExuAEXyAEM2AEB6AEB-AECiAIBqAIDuALal9O1BsACAdICJDJhMGIxZjRhLTFkMzAtNGY4My04YjgwLWRjYjhmZDI5ZDkzMdgCBeACAQ&aid=304142&ucfs=1&arphpl=1&dest_id=-722857&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=3&hapos=3&sr_order=popularity&srpvid=101960b20bd70157&srepoch=1723124710&from=searchresults",
+    "rate_details": {
+      "Staff": "9.2",
+      "Facilities": "9.2",
+      "Cleanliness": "9.2",
+      "Comfort": "8.3",
+      "Value_for_money": "7.5",
+      "location": "9.2",
+      "Free_Wifi": "9.2"
     },
-    {
-        "name": "Cosy S2 charmant à el Nasser 1",
-        "rate_note": null,
-        "reviews_nbr": null,
-        "link": "https://www.booking.com/hotel/tn/cosy-s2-charmant-a-el-nasser-1.fr.html?label=gen173nr-1BCAEoggI46AdIM1gEaOIBiAEBmAENuAEXyAEM2AEB6AEBiAIBqAIDuAL10s61BsACAdICJGQ2ZjQ1ZjY0LWI2MjUtNDQ3Mi1hNzI1LWEyZWQzYWMwNDg5NtgCBeACAQ&sid=84fca9a8aec2b4193e12954310d07f2f&aid=304142&ucfs=1&arphpl=1&dest_id=-722857&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=3&hapos=3&sr_order=popularity&srpvid=dd987846ea4f0d3b&srepoch=1723050398&from=searchresults",
-        "rate_details": {
-            "Staff": 0,
-            "Facilities": 0,
-            "Cleanliness": 0,
-            "Comfort": 0,
-            "Value_for_money": 0,
-            "location": 0,
-            "Free_Wifi": 0
-        },
-        "reviews_details": []
+    "reviews_details": [
+      { "review_score": 8, "review_date": "17/02/2024" },
+      { "review_score": 7, "review_date": "21/07/2024" },
+      { "review_score": 8, "review_date": "15/06/2024" }
+    ]
+  },
+  {
+    "name": "Cosy S2 charmant à el Nasser 1",
+    "rate_note": null,
+    "reviews_nbr": null,
+    "link": "https://www.booking.com/hotel/tn/cosy-s2-charmant-a-el-nasser-1.html?label=gen173nr-1FCAEoggI46AdIM1gEaOIBiAEBmAExuAEXyAEM2AEB6AEB-AECiAIBqAIDuALal9O1BsACAdICJDJhMGIxZjRhLTFkMzAtNGY4My04YjgwLWRjYjhmZDI5ZDkzMdgCBeACAQ&aid=304142&ucfs=1&arphpl=1&dest_id=-722857&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=4&hapos=4&sr_order=popularity&srpvid=101960b20bd70157&srepoch=1723124739&from=searchresults",
+    "rate_details": {
+      "Staff": 0,
+      "Facilities": 0,
+      "Cleanliness": 0,
+      "Comfort": 0,
+      "Value_for_money": 0,
+      "location": 0,
+      "Free_Wifi": 0
     },
-    {
-        "name": "Cozy Apartment Ennasr",
-        "rate_note": null,
-        "reviews_nbr": 838,
-        "link": "https://www.booking.com/hotel/tn/appartement-chambre-salon.fr.html?label=gen173nr-1BCAEoggI46AdIM1gEaOIBiAEBmAENuAEXyAEM2AEB6AEBiAIBqAIDuAL10s61BsACAdICJGQ2ZjQ1ZjY0LWI2MjUtNDQ3Mi1hNzI1LWEyZWQzYWMwNDg5NtgCBeACAQ&sid=84fca9a8aec2b4193e12954310d07f2f&aid=304142&ucfs=1&arphpl=1&dest_id=-722857&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=4&hapos=4&sr_order=popularity&srpvid=dd987846ea4f0d3b&srepoch=1723050414&from=searchresults",
-        "rate_details": {
-            "Staff": 0,
-            "Facilities": 0,
-            "Cleanliness": 0,
-            "Comfort": 0,
-            "Value_for_money": 0,
-            "location": 0,
-            "Free_Wifi": 0
-        },
-        "reviews_details": []
+    "reviews_details": []
+  },
+  {
+    "name": "L'Andalousia",
+    "rate_note": 9.7,
+    "reviews_nbr": 46,
+    "link": "https://www.booking.com/hotel/tn/andalousia.html?label=gen173nr-1FCAEoggI46AdIM1gEaOIBiAEBmAExuAEXyAEM2AEB6AEB-AECiAIBqAIDuALal9O1BsACAdICJDJhMGIxZjRhLTFkMzAtNGY4My04YjgwLWRjYjhmZDI5ZDkzMdgCBeACAQ&aid=304142&ucfs=1&arphpl=1&dest_id=-722857&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=5&hapos=5&sr_order=popularity&srpvid=101960b20bd70157&srepoch=1723124739&from_sustainable_property_sr=1&from=searchresults",
+    "rate_details": {
+      "Staff": "9.8",
+      "Facilities": "9.4",
+      "Cleanliness": "9.6",
+      "Comfort": "9.8",
+      "Value_for_money": "9.6",
+      "location": "9.5",
+      "Free_Wifi": "10"
     },
-    {
-        "name": "Château enasr",
-        "rate_note": null,
-        "reviews_nbr": 878,
-        "link": "https://www.booking.com/hotel/tn/chateau-enasr.fr.html?label=gen173nr-1BCAEoggI46AdIM1gEaOIBiAEBmAENuAEXyAEM2AEB6AEBiAIBqAIDuAL10s61BsACAdICJGQ2ZjQ1ZjY0LWI2MjUtNDQ3Mi1hNzI1LWEyZWQzYWMwNDg5NtgCBeACAQ&sid=84fca9a8aec2b4193e12954310d07f2f&aid=304142&ucfs=1&arphpl=1&dest_id=-722857&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=5&hapos=5&sr_order=popularity&srpvid=dd987846ea4f0d3b&srepoch=1723050414&from=searchresults",
-        "rate_details": {
-            "Staff": 0,
-            "Facilities": 0,
-            "Cleanliness": 0,
-            "Comfort": 0,
-            "Value_for_money": 0,
-            "location": 0,
-            "Free_Wifi": 0
-        },
-        "reviews_details": []
-    }
+    "reviews_details": [
+      { "review_score": 10, "review_date": "30/10/2023" },
+      { "review_score": 10, "review_date": "04/08/2024" },
+      { "review_score": 10, "review_date": "09/04/2024" },
+      { "review_score": 9, "review_date": "14/01/2024" },
+      { "review_score": 10, "review_date": "18/12/2023" },
+      { "review_score": 10, "review_date": "13/11/2023" },
+      { "review_score": 10, "review_date": "01/06/2023" },
+      { "review_score": 10, "review_date": "11/05/2023" },
+      { "review_score": 10, "review_date": "28/04/2023" },
+      { "review_score": 8, "review_date": "17/06/2023" },
+      { "review_score": 10, "review_date": "08/08/2024" },
+      { "review_score": 10, "review_date": "27/07/2024" },
+      { "review_score": 9, "review_date": "26/04/2024" },
+      { "review_score": 10, "review_date": "28/03/2024" },
+      { "review_score": 10, "review_date": "04/03/2024" },
+      { "review_score": 10, "review_date": "25/02/2024" },
+      { "review_score": 10, "review_date": "15/01/2024" },
+      { "review_score": 10, "review_date": "08/01/2024" },
+      { "review_score": 10, "review_date": "04/01/2024" },
+      { "review_score": 10, "review_date": "04/01/2024" },
+      { "review_score": 10, "review_date": "24/12/2023" },
+      { "review_score": 10, "review_date": "04/12/2023" },
+      { "review_score": 9, "review_date": "28/11/2023" },
+      { "review_score": 10, "review_date": "27/10/2023" },
+      { "review_score": 10, "review_date": "22/10/2023" },
+      { "review_score": 10, "review_date": "19/10/2023" },
+      { "review_score": 10, "review_date": "06/10/2023" },
+      { "review_score": 10, "review_date": "26/08/2023" },
+      { "review_score": 10, "review_date": "24/08/2023" },
+      { "review_score": 10, "review_date": "17/06/2023" },
+      { "review_score": 10, "review_date": "02/06/2023" },
+      { "review_score": 10, "review_date": "22/05/2023" },
+      { "review_score": 8, "review_date": "20/09/2023" },
+      { "review_score": 10, "review_date": "12/12/2023" },
+      { "review_score": 10, "review_date": "04/12/2023" },
+      { "review_score": 10, "review_date": "02/10/2023" },
+      { "review_score": 10, "review_date": "24/06/2023" },
+      { "review_score": 7, "review_date": "08/08/2023" },
+      { "review_score": 10, "review_date": "18/06/2024" },
+      { "review_score": 10, "review_date": "25/02/2024" }
+    ]
+  }
 ]

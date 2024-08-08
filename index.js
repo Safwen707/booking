@@ -5,9 +5,9 @@ function delay(time) {
     setTimeout(resolve, time);
   });
 }
-const type_destination = async function (page,destination) {
-  await page.type('input[name="ss"]',`${destination}`, { delay: 1000 });
-  console.log( `Typed destination ${destination}`);
+const type_destination = async function (page, destination) {
+  await page.type('input[name="ss"]', `${destination}`, { delay: 1000 });
+  console.log(`Typed destination ${destination}`);
 };
 const autocomplete = async function (page) {
   await page.waitForSelector("#autocomplete-result-0");
@@ -36,7 +36,11 @@ const get_hotels_number = async function (page) {
   let hotelsNumber = await page.$eval(
     "#bodyconstraint-inner > div:nth-child(8) > div > div.caa83e2398 > div.a84de7f213 > div.b9687b0063 > div.eda0d449dc.a45957e294 > h1",
     (el) => {
-      return parseInt(el.innerText.split(" ")[1]);
+      if (!Number.isNaN(parseInt(el.innerText.split(" ")[1]))) {
+        return parseInt(el.innerText.split(" ")[1]);
+      } else {
+        return parseInt(el.innerText.split(" ")[2]);
+      }
     }
   );
   console.log("🚀 ~ getPrice ~ hotelsNumber:", hotelsNumber);
@@ -49,7 +53,7 @@ const search = async function (page) {
   console.log("search");
 };
 
-async function getGlobalRate(url,destination) {
+async function getGlobalRate(url, destination) {
   const browser = await puppeteer.launch({ headless: false, timeout: 60000 });
 
   console.log("Browser launched.");
@@ -69,7 +73,7 @@ async function getGlobalRate(url,destination) {
   // );
   // console.log("onglet fermé");
   //-------------------destination-----------------
-  await type_destination(page,destination);
+  await type_destination(page, destination);
 
   //-------------------autocomplete result -----------------
   autocomplete(page);
@@ -89,12 +93,15 @@ async function getGlobalRate(url,destination) {
   await LoadMore(load_more_selector, page);
   //------------------selecting titles global_rate and link-----------------
 
-  const selector_box = "[data-testid=property-card-container]"; 
+  const selector_box = "[data-testid=property-card-container]";
   const selector_title = "[data-testid=title]";
   const selector_rate = "[data-testid=review-score]";
   const selector_title_link = "[data-testid=title-link]";
   let hotels = [];
 
+  if (hotelsNumber > 5) {
+    hotelsNumber = 5;
+  } // en se lemite à 5 hotel
   for (let i = 0; i < hotelsNumber; i++) {
     {
       await page.waitForSelector(selector_box);
@@ -141,7 +148,7 @@ async function getGlobalRate(url,destination) {
               let hotel;
 
               if (rateAndReviews != "new : not rated yet") {
-                let rate_note = parseInt(rateAndReviews.split(" ")[1]);
+                let rate_note = parseFloat(rateAndReviews.split(" ")[1]);
 
                 let reviews_nbr;
                 !Number.isNaN(parseInt(rateAndReviews.split(" ")[3]))
@@ -189,11 +196,11 @@ async function getGlobalRate(url,destination) {
       );
     }
   }
-  console.log("🚀 ~ getGlobalRate ~ hotels:", hotels);
-  return hotels;  
+
+  return hotels;
 }
 
-// const hotels = [ 
+// const hotels = [
 //   {
 //     name: "El Mouradi Douz",
 //     rate_note: 7,
@@ -309,7 +316,7 @@ async function get_rate_details(hotels) {
     review_score: 0,
     review_date: "",
   }; // elle contient plusieures review_details
-  if( hotels.length>5){hotels.length=5}
+
   for (let i = 1; i < hotels.length; i++) {
     let reviews_details = [];
     //hotels.length
@@ -364,8 +371,12 @@ async function get_rate_details(hotels) {
         await page.waitForSelector("#reviewCardsSection");
       } catch (err) {
         console.log("🚀 ~ get_rate_details ~ err:", err);
-        await page.waitForSelector('#b2hotelPage > div.a1b9d2f057.c20dffcd7d > div > div > div > div > div.f82f96f550 > div > div.c55682b727 > div > div > div > div.b6e7144477 > button') //show all reviews
-        await page.click("#b2hotelPage > div.a1b9d2f057.c20dffcd7d > div > div > div > div > div.f82f96f550 > div > div.c55682b727 > div > div > div > div.b6e7144477 > button")
+        await page.waitForSelector(
+          "#b2hotelPage > div.a1b9d2f057.c20dffcd7d > div > div > div > div > div.f82f96f550 > div > div.c55682b727 > div > div > div > div.b6e7144477 > button"
+        ); //show all reviews
+        await page.click(
+          "#b2hotelPage > div.a1b9d2f057.c20dffcd7d > div > div > div > div > div.f82f96f550 > div > div.c55682b727 > div > div > div > div.b6e7144477 > button"
+        );
       }
       let isListOfNavigationExist = await page.evaluate(() => {
         let Window = document.querySelectorAll("#reviewCardsSection")[0];
@@ -416,9 +427,13 @@ async function get_rate_details(hotels) {
             await page.waitForSelector("#reviewCardsSection");
           } catch (err) {
             console.log("🚀 ~ get_rate_details ~ err:", err);
-            await page.waitForSelector('#b2hotelPage > div.a1b9d2f057.c20dffcd7d > div > div > div > div > div.f82f96f550 > div > div.c55682b727 > div > div > div > div.b6e7144477 > button') //show all reviews
-            await page.click("#b2hotelPage > div.a1b9d2f057.c20dffcd7d > div > div > div > div > div.f82f96f550 > div > div.c55682b727 > div > div > div > div.b6e7144477 > button")
-          };
+            await page.waitForSelector(
+              "#b2hotelPage > div.a1b9d2f057.c20dffcd7d > div > div > div > div > div.f82f96f550 > div > div.c55682b727 > div > div > div > div.b6e7144477 > button"
+            ); //show all reviews
+            await page.click(
+              "#b2hotelPage > div.a1b9d2f057.c20dffcd7d > div > div > div > div > div.f82f96f550 > div > div.c55682b727 > div > div > div > div.b6e7144477 > button"
+            );
+          }
           reviews_details = await page.evaluate(
             (review_details, reviews_details, k, j) => {
               let review_cards_selector = "[data-testid=review-cards]";
@@ -472,7 +487,7 @@ async function get_rate_details(hotels) {
                     review_date: review_date,
                   };
 
-                  reviews_details.push(JSON.stringify(review_details));
+                  reviews_details.push(review_details);
                 }
 
                 return reviews_details;
@@ -489,8 +504,8 @@ async function get_rate_details(hotels) {
             reviews_details,
             k,
             j
-          ); 
- 
+          );
+
           let l;
 
           if (j <= 10) {
@@ -611,25 +626,23 @@ async function get_rate_details(hotels) {
 }
 
 const test = async () => {
-  for(let i=0;i<24;i++)
-  {
-    let destination=process.env.destinations.split(',')[i]
-    console.log("🚀 ~ test ~ destination:", destination)
-    let hotels = await getGlobalRate(process.env.urlBooking,destination);
+  let destination = "zarzis";
+  console.log("🚀 ~ test ~ destination:", destination);
+  let hotels = await getGlobalRate(process.env.urlBooking, destination);
   console.log("__________________________________________");
   let Hotels = await get_rate_details(hotels);
-  // console.log("🚀 ~ Hotels:", Hotels);
+  console.log("🚀 ~ Hotels:", Hotels);
   console.log("__________________________________________");
-  var fs = require('fs');
-  var HotelString = JSON.stringify(Hotels); 
-  await fs.writeFile(`Hotels_${destination}.json`, HotelString,(err) => {
+  var fs = require("fs");
+  var HotelString = JSON.stringify(Hotels);
+  await fs.writeFileSync(`Hotels_${destination}.json`, HotelString, (err) => {
     if (err) {
-      console.error('Error writing to file:', err);
+      console.error("Error writing to file:", err);
     } else {
-      console.log('File has been written');
+      console.log("File has been written");
     }
   });
-  console.log("Hotels data has been written to Hotels.json successfully.")}
+  console.log("Hotels data has been written to Hotels.json successfully.");
 };
 test();
 

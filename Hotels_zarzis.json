@@ -1,0 +1,114 @@
+[
+  {
+    "name": "Zephir Hôtel & Spa",
+    "rate_note": 6.8,
+    "reviews_nbr": 274,
+    "link": "https://www.booking.com/hotel/tn/zephir-ha-tel-amp-spa.html?label=gen173nr-1FCAEoggI46AdIM1gEaOIBiAEBmAExuAEXyAEM2AEB6AEB-AECiAIBqAIDuALQm9O1BsACAdICJDc0ZWI0Y2MyLWVmN2UtNDAxNy05YmFhLTk1Y2NkZmVhYjczMNgCBeACAQ&aid=304142&ucfs=1&arphpl=1&dest_id=-725958&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=312861aee1e30134&srepoch=1723125213&from=searchresults"
+  },
+  {
+    "name": "Petit Appartement Sidi kbir",
+    "rate_note": null,
+    "reviews_nbr": null,
+    "link": "https://www.booking.com/hotel/tn/petit-appartement-sidi-kbir.html?label=gen173nr-1FCAEoggI46AdIM1gEaOIBiAEBmAExuAEXyAEM2AEB6AEB-AECiAIBqAIDuALQm9O1BsACAdICJDc0ZWI0Y2MyLWVmN2UtNDAxNy05YmFhLTk1Y2NkZmVhYjczMNgCBeACAQ&aid=304142&ucfs=1&arphpl=1&dest_id=-725958&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=2&hapos=2&sr_order=popularity&srpvid=312861aee1e30134&srepoch=1723125213&from=searchresults",
+    "rate_details": {
+      "Staff": 0,
+      "Facilities": 0,
+      "Cleanliness": 0,
+      "Comfort": 0,
+      "Value_for_money": 0,
+      "location": 0,
+      "Free_Wifi": 0
+    },
+    "reviews_details": []
+  },
+  {
+    "name": "VILLA KIKA ZARZIS, LOCATION CHAMBRES D'HÔTES en TUNISIE",
+    "rate_note": 9.4,
+    "reviews_nbr": 22,
+    "link": "https://www.booking.com/hotel/tn/villa-kika-chambres-d-hotes.html?label=gen173nr-1FCAEoggI46AdIM1gEaOIBiAEBmAExuAEXyAEM2AEB6AEB-AECiAIBqAIDuALQm9O1BsACAdICJDc0ZWI0Y2MyLWVmN2UtNDAxNy05YmFhLTk1Y2NkZmVhYjczMNgCBeACAQ&aid=304142&ucfs=1&arphpl=1&dest_id=-725958&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=3&hapos=3&sr_order=popularity&srpvid=312861aee1e30134&srepoch=1723125213&from=searchresults",
+    "rate_details": {
+      "Staff": "9.8",
+      "Facilities": "9.1",
+      "Cleanliness": "9.9",
+      "Comfort": "9.7",
+      "Value_for_money": "8.9",
+      "location": "8.9",
+      "Free_Wifi": "9.8"
+    },
+    "reviews_details": [
+      { "review_score": 10, "review_date": "15/10/2023" },
+      { "review_score": 10, "review_date": "31/07/2024" },
+      { "review_score": 10, "review_date": "22/07/2024" },
+      { "review_score": 8, "review_date": "16/07/2024" },
+      { "review_score": 9, "review_date": "29/04/2024" },
+      { "review_score": 10, "review_date": "21/10/2023" },
+      { "review_score": 10, "review_date": "19/09/2023" },
+      { "review_score": 8, "review_date": "27/08/2023" },
+      { "review_score": 10, "review_date": "25/08/2023" },
+      { "review_score": 10, "review_date": "20/08/2023" },
+      { "review_score": 8, "review_date": "12/08/2023" },
+      { "review_score": 10, "review_date": "11/08/2023" },
+      { "review_score": 9, "review_date": "10/08/2023" },
+      { "review_score": 10, "review_date": "29/07/2023" },
+      { "review_score": 7, "review_date": "02/09/2023" },
+      { "review_score": 10, "review_date": "06/08/2023" },
+      { "review_score": 10, "review_date": "06/08/2024" },
+      { "review_score": 9, "review_date": "01/08/2024" },
+      { "review_score": 10, "review_date": "27/07/2024" },
+      { "review_score": 10, "review_date": "27/10/2023" }
+    ]
+  },
+  {
+    "name": "Belle appartement vue de mer",
+    "rate_note": 10,
+    "reviews_nbr": 1,
+    "link": "https://www.booking.com/hotel/tn/la-baie-de-zarzis-zarzis.html?label=gen173nr-1FCAEoggI46AdIM1gEaOIBiAEBmAExuAEXyAEM2AEB6AEB-AECiAIBqAIDuALQm9O1BsACAdICJDc0ZWI0Y2MyLWVmN2UtNDAxNy05YmFhLTk1Y2NkZmVhYjczMNgCBeACAQ&aid=304142&ucfs=1&arphpl=1&dest_id=-725958&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=4&hapos=4&sr_order=popularity&srpvid=312861aee1e30134&srepoch=1723125242&from_sustainable_property_sr=1&from=searchresults",
+    "rate_details": {
+      "Staff": "10",
+      "Facilities": "10",
+      "Cleanliness": "10",
+      "Comfort": "10",
+      "Value_for_money": "10",
+      "location": "10",
+      "Free_Wifi": "10"
+    },
+    "reviews_details": [{ "review_score": 10, "review_date": "03/01/2024" }]
+  },
+  {
+    "name": "Eden Star Resort",
+    "rate_note": 6.1,
+    "reviews_nbr": 23,
+    "link": "https://www.booking.com/hotel/tn/eden-star.html?label=gen173nr-1FCAEoggI46AdIM1gEaOIBiAEBmAExuAEXyAEM2AEB6AEB-AECiAIBqAIDuALQm9O1BsACAdICJDc0ZWI0Y2MyLWVmN2UtNDAxNy05YmFhLTk1Y2NkZmVhYjczMNgCBeACAQ&aid=304142&ucfs=1&arphpl=1&dest_id=-725958&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=5&hapos=5&sr_order=popularity&srpvid=312861aee1e30134&srepoch=1723125242&from_sustainable_property_sr=1&from=searchresults",
+    "rate_details": {
+      "Staff": "5.9",
+      "Facilities": "6.3",
+      "Cleanliness": "6.7",
+      "Comfort": "6.5",
+      "Value_for_money": "6.6",
+      "location": "6.8",
+      "Free_Wifi": "5.9"
+    },
+    "reviews_details": [
+      { "review_score": 10, "review_date": "31/12/2023" },
+      { "review_score": 7, "review_date": "29/08/2023" },
+      { "review_score": 1, "review_date": "25/05/2024" },
+      { "review_score": 8, "review_date": "08/03/2024" },
+      { "review_score": 3, "review_date": "04/03/2024" },
+      { "review_score": 9, "review_date": "20/02/2024" },
+      { "review_score": 3, "review_date": "17/02/2024" },
+      { "review_score": 4, "review_date": "12/10/2023" },
+      { "review_score": 9, "review_date": "29/07/2023" },
+      { "review_score": 4, "review_date": "13/06/2023" },
+      { "review_score": 9, "review_date": "27/05/2023" },
+      { "review_score": 6, "review_date": "05/02/2024" },
+      { "review_score": 6, "review_date": "05/02/2024" },
+      { "review_score": 6, "review_date": "05/02/2024" },
+      { "review_score": 9, "review_date": "04/04/2024" },
+      { "review_score": 9, "review_date": "09/02/2024" },
+      { "review_score": 6, "review_date": "01/04/2024" },
+      { "review_score": 6, "review_date": "22/02/2024" },
+      { "review_score": 7, "review_date": "18/02/2024" },
+      { "review_score": 6, "review_date": "10/02/2024" }
+    ]
+  }
+]
