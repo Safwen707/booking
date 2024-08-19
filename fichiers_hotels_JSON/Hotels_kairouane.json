@@ -1,0 +1,972 @@
+[
+    {
+        "name": "Hotel Continental",
+        "rate_note": 8.4,
+        "reviews_nbr": 1061,
+        "link": "https://www.booking.com/hotel/tn/continental.html?label=gen173nr-1FCAEoggI46AdIM1gEaOIBiAEBmAExuAEXyAEM2AEB6AEB-AECiAIBqAIDuALP1uS1BsACAdICJDY4MGYxMmEyLTgyZWQtNDI4NC04ZDg0LTIyMzg5NjFkZWI5M9gCBeACAQ&aid=304142&ucfs=1&arphpl=1&dest_id=-722654&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=9ba69632b6fd1cfb&srepoch=1723411305&from=searchresults"
+    },
+    {
+        "name": "Maison d'hôte Chama",
+        "rate_note": 9,
+        "reviews_nbr": 170,
+        "link": "https://www.booking.com/hotel/tn/chema-chaabani.html?label=gen173nr-1FCAEoggI46AdIM1gEaOIBiAEBmAExuAEXyAEM2AEB6AEB-AECiAIBqAIDuALP1uS1BsACAdICJDY4MGYxMmEyLTgyZWQtNDI4NC04ZDg0LTIyMzg5NjFkZWI5M9gCBeACAQ&aid=304142&ucfs=1&arphpl=1&dest_id=-722654&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=2&hapos=2&sr_order=popularity&srpvid=9ba69632b6fd1cfb&srepoch=1723411305&from=searchresults",
+        "rate_details": {
+            "Staff": "9.7",
+            "Facilities": "8.7",
+            "Cleanliness": "9.3",
+            "Comfort": "9.1",
+            "Value_for_money": "8.9",
+            "location": "9.2",
+            "Free_Wifi": "7.5"
+        },
+        "reviews_details": [
+            {
+                "review_score": 10,
+                "review_date": "02/06/2024"
+            },
+            {
+                "review_score": 9,
+                "review_date": "22/06/2024"
+            },
+            {
+                "review_score": 10,
+                "review_date": "09/06/2024"
+            },
+            {
+                "review_score": 8,
+                "review_date": "05/06/2024"
+            },
+            {
+                "review_score": 10,
+                "review_date": "11/05/2024"
+            },
+            {
+                "review_score": 8,
+                "review_date": "11/05/2024"
+            },
+            {
+                "review_score": 10,
+                "review_date": "09/05/2024"
+            },
+            {
+                "review_score": 10,
+                "review_date": "30/04/2024"
+            },
+            {
+                "review_score": 8,
+                "review_date": "16/04/2024"
+            },
+            {
+                "review_score": 8,
+                "review_date": "15/04/2024"
+            },
+            {
+                "review_score": 10,
+                "review_date": "05/03/2024"
+            },
+            {
+                "review_score": 9,
+                "review_date": "25/02/2024"
+            },
+            {
+                "review_score": 10,
+                "review_date": "21/02/2024"
+            },
+            {
+                "review_score": 8,
+                "review_date": "20/02/2024"
+            },
+            {
+                "review_score": 10,
+                "review_date": "28/01/2024"
+            },
+            {
+                "review_score": 10,
+                "review_date": "28/11/2023"
+            },
+            {
+                "review_score": 10,
+                "review_date": "30/10/2023"
+            },
+            {
+                "review_score": 10,
+                "review_date": "07/10/2023"
+            },
+            {
+                "review_score": 10,
+                "review_date": "22/06/2023"
+            },
+            {
+                "review_score": 10,
+                "review_date": "09/05/2023"
+            },
+            {
+                "review_score": 9,
+                "review_date": "01/05/2023"
+            },
+            {
+                "review_score": 9,
+                "review_date": "27/02/2023"
+            },
+            {
+                "review_score": 9,
+                "review_date": "22/02/2023"
+            },
+            {
+                "review_score": 10,
+                "review_date": "22/02/2023"
+            },
+            {
+                "review_score": 10,
+                "review_date": "25/01/2023"
+            },
+            {
+                "review_score": 8,
+                "review_date": "14/01/2023"
+            },
+            {
+                "review_score": 8,
+                "review_date": "01/01/2023"
+            },
+            {
+                "review_score": 10,
+                "review_date": "12/12/2022"
+            },
+            {
+                "review_score": 10,
+                "review_date": "15/05/2022"
+            },
+            {
+                "review_score": 10,
+                "review_date": "08/05/2022"
+            },
+            {
+                "review_score": 10,
+                "review_date": "29/04/2022"
+            },
+            {
+                "review_score": 10,
+                "review_date": "13/04/2022"
+            },
+            {
+                "review_score": 9,
+                "review_date": "24/03/2022"
+            },
+            {
+                "review_score": 9,
+                "review_date": "21/01/2022"
+            },
+            {
+                "review_score": 8,
+                "review_date": "16/01/2022"
+            },
+            {
+                "review_score": 9,
+                "review_date": "09/12/2021"
+            },
+            {
+                "review_score": 8,
+                "review_date": "29/11/2021"
+            },
+            {
+                "review_score": 9,
+                "review_date": "15/09/2021"
+            },
+            {
+                "review_score": 7,
+                "review_date": "01/05/2024"
+            },
+            {
+                "review_score": 6,
+                "review_date": "08/09/2023"
+            },
+            {
+                "review_score": 9,
+                "review_date": "31/07/2024"
+            },
+            {
+                "review_score": 10,
+                "review_date": "29/07/2024"
+            },
+            {
+                "review_score": 10,
+                "review_date": "13/07/2024"
+            },
+            {
+                "review_score": 9,
+                "review_date": "08/07/2024"
+            },
+            {
+                "review_score": 10,
+                "review_date": "07/07/2024"
+            },
+            {
+                "review_score": 10,
+                "review_date": "06/07/2024"
+            },
+            {
+                "review_score": 9,
+                "review_date": "26/06/2024"
+            },
+            {
+                "review_score": 10,
+                "review_date": "20/06/2024"
+            },
+            {
+                "review_score": 9,
+                "review_date": "16/06/2024"
+            },
+            {
+                "review_score": 10,
+                "review_date": "13/06/2024"
+            },
+            {
+                "review_score": 10,
+                "review_date": "04/06/2024"
+            },
+            {
+                "review_score": 8,
+                "review_date": "21/05/2024"
+            },
+            {
+                "review_score": 10,
+                "review_date": "03/05/2024"
+            },
+            {
+                "review_score": 10,
+                "review_date": "02/05/2024"
+            },
+            {
+                "review_score": 8,
+                "review_date": "22/04/2024"
+            },
+            {
+                "review_score": 9,
+                "review_date": "01/04/2024"
+            },
+            {
+                "review_score": 8,
+                "review_date": "31/03/2024"
+            },
+            {
+                "review_score": 10,
+                "review_date": "27/03/2024"
+            },
+            {
+                "review_score": 9,
+                "review_date": "04/03/2024"
+            },
+            {
+                "review_score": 9,
+                "review_date": "01/03/2024"
+            },
+            {
+                "review_score": 10,
+                "review_date": "28/02/2024"
+            },
+            {
+                "review_score": 10,
+                "review_date": "26/02/2024"
+            },
+            {
+                "review_score": 8,
+                "review_date": "07/02/2024"
+            },
+            {
+                "review_score": 9,
+                "review_date": "04/02/2024"
+            },
+            {
+                "review_score": 9,
+                "review_date": "04/02/2024"
+            },
+            {
+                "review_score": 10,
+                "review_date": "19/01/2024"
+            },
+            {
+                "review_score": 8,
+                "review_date": "29/12/2023"
+            },
+            {
+                "review_score": 10,
+                "review_date": "04/11/2023"
+            },
+            {
+                "review_score": 10,
+                "review_date": "25/10/2023"
+            },
+            {
+                "review_score": 10,
+                "review_date": "13/10/2023"
+            },
+            {
+                "review_score": 9,
+                "review_date": "09/10/2023"
+            },
+            {
+                "review_score": 9,
+                "review_date": "04/10/2023"
+            },
+            {
+                "review_score": 8,
+                "review_date": "13/09/2023"
+            },
+            {
+                "review_score": 9,
+                "review_date": "12/09/2023"
+            },
+            {
+                "review_score": 8,
+                "review_date": "09/09/2023"
+            },
+            {
+                "review_score": 10,
+                "review_date": "02/09/2023"
+            },
+            {
+                "review_score": 10,
+                "review_date": "27/08/2023"
+            },
+            {
+                "review_score": 10,
+                "review_date": "16/08/2023"
+            },
+            {
+                "review_score": 10,
+                "review_date": "15/07/2023"
+            },
+            {
+                "review_score": 8,
+                "review_date": "19/06/2023"
+            },
+            {
+                "review_score": 8,
+                "review_date": "24/02/2023"
+            },
+            {
+                "review_score": 9,
+                "review_date": "20/02/2023"
+            },
+            {
+                "review_score": 10,
+                "review_date": "06/02/2023"
+            },
+            {
+                "review_score": 10,
+                "review_date": "26/01/2023"
+            },
+            {
+                "review_score": 10,
+                "review_date": "24/01/2023"
+            },
+            {
+                "review_score": 9,
+                "review_date": "10/09/2022"
+            },
+            {
+                "review_score": 10,
+                "review_date": "08/09/2022"
+            },
+            {
+                "review_score": 10,
+                "review_date": "05/09/2022"
+            },
+            {
+                "review_score": 10,
+                "review_date": "04/09/2022"
+            },
+            {
+                "review_score": 10,
+                "review_date": "27/08/2022"
+            },
+            {
+                "review_score": 7,
+                "review_date": "25/11/2023"
+            },
+            {
+                "review_score": 1,
+                "review_date": "18/09/2023"
+            },
+            {
+                "review_score": 7,
+                "review_date": "17/03/2023"
+            },
+            {
+                "review_score": 7,
+                "review_date": "04/03/2023"
+            },
+            {
+                "review_score": 2,
+                "review_date": "21/03/2022"
+            },
+            {
+                "review_score": 7,
+                "review_date": "06/09/2021"
+            },
+            {
+                "review_score": 9,
+                "review_date": "16/01/2024"
+            },
+            {
+                "review_score": 9,
+                "review_date": "27/12/2023"
+            },
+            {
+                "review_score": 10,
+                "review_date": "23/12/2023"
+            },
+            {
+                "review_score": 9,
+                "review_date": "21/10/2023"
+            },
+            {
+                "review_score": 8,
+                "review_date": "21/05/2022"
+            },
+            {
+                "review_score": 10,
+                "review_date": "11/04/2022"
+            },
+            {
+                "review_score": 9,
+                "review_date": "01/04/2022"
+            },
+            {
+                "review_score": 9,
+                "review_date": "20/03/2022"
+            },
+            {
+                "review_score": 10,
+                "review_date": "07/03/2022"
+            },
+            {
+                "review_score": 10,
+                "review_date": "17/01/2022"
+            },
+            {
+                "review_score": 10,
+                "review_date": "02/01/2022"
+            },
+            {
+                "review_score": 8,
+                "review_date": "09/12/2021"
+            },
+            {
+                "review_score": 7,
+                "review_date": "29/07/2024"
+            },
+            {
+                "review_score": 7,
+                "review_date": "28/01/2024"
+            },
+            {
+                "review_score": 8,
+                "review_date": "21/05/2022"
+            },
+            {
+                "review_score": 10,
+                "review_date": "11/04/2022"
+            },
+            {
+                "review_score": 9,
+                "review_date": "01/04/2022"
+            },
+            {
+                "review_score": 9,
+                "review_date": "20/03/2022"
+            },
+            {
+                "review_score": 10,
+                "review_date": "07/03/2022"
+            },
+            {
+                "review_score": 10,
+                "review_date": "17/01/2022"
+            },
+            {
+                "review_score": 10,
+                "review_date": "02/01/2022"
+            },
+            {
+                "review_score": 8,
+                "review_date": "09/12/2021"
+            },
+            {
+                "review_score": 7,
+                "review_date": "29/07/2024"
+            },
+            {
+                "review_score": 7,
+                "review_date": "28/01/2024"
+            },
+            {
+                "review_score": 7,
+                "review_date": "25/11/2023"
+            },
+            {
+                "review_score": 1,
+                "review_date": "18/09/2023"
+            },
+            {
+                "review_score": 7,
+                "review_date": "17/03/2023"
+            },
+            {
+                "review_score": 7,
+                "review_date": "04/03/2023"
+            },
+            {
+                "review_score": 2,
+                "review_date": "21/03/2022"
+            },
+            {
+                "review_score": 7,
+                "review_date": "06/09/2021"
+            },
+            {
+                "review_score": 9,
+                "review_date": "16/01/2024"
+            },
+            {
+                "review_score": 9,
+                "review_date": "27/12/2023"
+            },
+            {
+                "review_score": 10,
+                "review_date": "23/12/2023"
+            },
+            {
+                "review_score": 9,
+                "review_date": "21/10/2023"
+            },
+            {
+                "review_score": 10,
+                "review_date": "19/04/2024"
+            },
+            {
+                "review_score": 8,
+                "review_date": "21/10/2023"
+            },
+            {
+                "review_score": 8,
+                "review_date": "15/09/2023"
+            },
+            {
+                "review_score": 9,
+                "review_date": "14/09/2023"
+            },
+            {
+                "review_score": 10,
+                "review_date": "05/07/2023"
+            },
+            {
+                "review_score": 9,
+                "review_date": "22/03/2023"
+            },
+            {
+                "review_score": 8,
+                "review_date": "02/03/2023"
+            },
+            {
+                "review_score": 8,
+                "review_date": "08/02/2023"
+            },
+            {
+                "review_score": 9,
+                "review_date": "01/02/2023"
+            },
+            {
+                "review_score": 9,
+                "review_date": "10/01/2023"
+            },
+            {
+                "review_score": 10,
+                "review_date": "03/01/2023"
+            },
+            {
+                "review_score": 9,
+                "review_date": "17/12/2022"
+            },
+            {
+                "review_score": 10,
+                "review_date": "19/09/2022"
+            },
+            {
+                "review_score": 8,
+                "review_date": "11/09/2022"
+            },
+            {
+                "review_score": 10,
+                "review_date": "08/07/2022"
+            },
+            {
+                "review_score": 10,
+                "review_date": "03/06/2022"
+            },
+            {
+                "review_score": 9,
+                "review_date": "24/05/2022"
+            },
+            {
+                "review_score": 8,
+                "review_date": "16/05/2022"
+            },
+            {
+                "review_score": 10,
+                "review_date": "19/04/2022"
+            },
+            {
+                "review_score": 8,
+                "review_date": "07/03/2022"
+            },
+            {
+                "review_score": 10,
+                "review_date": "19/04/2024"
+            },
+            {
+                "review_score": 8,
+                "review_date": "21/10/2023"
+            },
+            {
+                "review_score": 8,
+                "review_date": "15/09/2023"
+            },
+            {
+                "review_score": 9,
+                "review_date": "14/09/2023"
+            },
+            {
+                "review_score": 10,
+                "review_date": "05/07/2023"
+            },
+            {
+                "review_score": 9,
+                "review_date": "22/03/2023"
+            },
+            {
+                "review_score": 8,
+                "review_date": "02/03/2023"
+            },
+            {
+                "review_score": 8,
+                "review_date": "08/02/2023"
+            },
+            {
+                "review_score": 9,
+                "review_date": "01/02/2023"
+            },
+            {
+                "review_score": 9,
+                "review_date": "10/01/2023"
+            }
+        ]
+    },
+    {
+        "name": "Dar manena",
+        "rate_note": 7.6,
+        "reviews_nbr": 30,
+        "link": "https://www.booking.com/hotel/tn/dar-manena-lqyrwn.html?label=gen173nr-1FCAEoggI46AdIM1gEaOIBiAEBmAExuAEXyAEM2AEB6AEB-AECiAIBqAIDuALP1uS1BsACAdICJDY4MGYxMmEyLTgyZWQtNDI4NC04ZDg0LTIyMzg5NjFkZWI5M9gCBeACAQ&aid=304142&ucfs=1&arphpl=1&dest_id=-722654&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=3&hapos=3&sr_order=popularity&srpvid=9ba69632b6fd1cfb&srepoch=1723411305&from=searchresults",
+        "rate_details": {
+            "Staff": "9.2",
+            "Facilities": "7.3",
+            "Cleanliness": "8.3",
+            "Comfort": "8.0",
+            "Value_for_money": "8.0",
+            "location": "8.5",
+            "Free_Wifi": "9.2"
+        },
+        "reviews_details": [
+            {
+                "review_score": 8,
+                "review_date": "06/11/2023"
+            },
+            {
+                "review_score": 8,
+                "review_date": "15/01/2024"
+            },
+            {
+                "review_score": 9,
+                "review_date": "12/11/2023"
+            },
+            {
+                "review_score": 7,
+                "review_date": "26/10/2023"
+            },
+            {
+                "review_score": 9,
+                "review_date": "17/09/2023"
+            },
+            {
+                "review_score": 10,
+                "review_date": "17/11/2023"
+            },
+            {
+                "review_score": 4,
+                "review_date": "01/10/2023"
+            },
+            {
+                "review_score": 7,
+                "review_date": "08/06/2024"
+            },
+            {
+                "review_score": 8,
+                "review_date": "07/06/2024"
+            },
+            {
+                "review_score": 9,
+                "review_date": "08/05/2024"
+            },
+            {
+                "review_score": 7,
+                "review_date": "30/04/2024"
+            },
+            {
+                "review_score": 9,
+                "review_date": "01/04/2024"
+            },
+            {
+                "review_score": 8,
+                "review_date": "21/03/2024"
+            },
+            {
+                "review_score": 8,
+                "review_date": "15/10/2023"
+            },
+            {
+                "review_score": 4,
+                "review_date": "10/06/2024"
+            },
+            {
+                "review_score": 6,
+                "review_date": "30/03/2024"
+            },
+            {
+                "review_score": 10,
+                "review_date": "20/01/2024"
+            },
+            {
+                "review_score": 5,
+                "review_date": "13/01/2024"
+            },
+            {
+                "review_score": 6,
+                "review_date": "31/10/2023"
+            },
+            {
+                "review_score": 7,
+                "review_date": "17/12/2023"
+            }
+        ]
+    },
+    {
+        "name": "Dar lella habiba",
+        "rate_note": 9.3,
+        "reviews_nbr": 4,
+        "link": "https://www.booking.com/hotel/tn/dar-lella-habiba.html?label=gen173nr-1FCAEoggI46AdIM1gEaOIBiAEBmAExuAEXyAEM2AEB6AEB-AECiAIBqAIDuALP1uS1BsACAdICJDY4MGYxMmEyLTgyZWQtNDI4NC04ZDg0LTIyMzg5NjFkZWI5M9gCBeACAQ&aid=304142&ucfs=1&arphpl=1&dest_id=-722654&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=4&hapos=4&sr_order=popularity&srpvid=9ba69632b6fd1cfb&srepoch=1723411334&from=searchresults",
+        "rate_details": {
+            "Staff": "10",
+            "Facilities": "9.4",
+            "Cleanliness": "9.4",
+            "Comfort": "9.4",
+            "Value_for_money": "9.4",
+            "location": "10",
+            "Free_Wifi": "10"
+        },
+        "reviews_details": [
+            {
+                "review_score": 10,
+                "review_date": "08/07/2024"
+            },
+            {
+                "review_score": 9,
+                "review_date": "21/07/2024"
+            },
+            {
+                "review_score": 10,
+                "review_date": "14/07/2024"
+            },
+            {
+                "review_score": 8,
+                "review_date": "03/08/2024"
+            }
+        ]
+    },
+    {
+        "name": "Henchir ejdoud",
+        "rate_note": 9.7,
+        "reviews_nbr": 49,
+        "link": "https://www.booking.com/hotel/tn/henchir-ejdoud.html?label=gen173nr-1FCAEoggI46AdIM1gEaOIBiAEBmAExuAEXyAEM2AEB6AEB-AECiAIBqAIDuALP1uS1BsACAdICJDY4MGYxMmEyLTgyZWQtNDI4NC04ZDg0LTIyMzg5NjFkZWI5M9gCBeACAQ&aid=304142&ucfs=1&arphpl=1&dest_id=-722654&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=5&hapos=5&sr_order=popularity&srpvid=9ba69632b6fd1cfb&srepoch=1723411334&from=searchresults",
+        "rate_details": {
+            "Staff": "9.9",
+            "Facilities": "9.4",
+            "Cleanliness": "9.7",
+            "Comfort": "9.6",
+            "Value_for_money": "9.5",
+            "location": "8.5",
+            "Free_Wifi": "10"
+        },
+        "reviews_details": [
+            {
+                "review_score": 10,
+                "review_date": "03/05/2024"
+            },
+            {
+                "review_score": 10,
+                "review_date": "23/06/2024"
+            },
+            {
+                "review_score": 10,
+                "review_date": "05/06/2024"
+            },
+            {
+                "review_score": 10,
+                "review_date": "28/05/2024"
+            },
+            {
+                "review_score": 10,
+                "review_date": "07/05/2024"
+            },
+            {
+                "review_score": 10,
+                "review_date": "03/05/2024"
+            },
+            {
+                "review_score": 10,
+                "review_date": "26/04/2024"
+            },
+            {
+                "review_score": 10,
+                "review_date": "20/04/2024"
+            },
+            {
+                "review_score": 10,
+                "review_date": "14/04/2024"
+            },
+            {
+                "review_score": 10,
+                "review_date": "28/03/2024"
+            },
+            {
+                "review_score": 9,
+                "review_date": "31/01/2024"
+            },
+            {
+                "review_score": 10,
+                "review_date": "10/01/2024"
+            },
+            {
+                "review_score": 10,
+                "review_date": "05/01/2024"
+            },
+            {
+                "review_score": 10,
+                "review_date": "16/12/2023"
+            },
+            {
+                "review_score": 10,
+                "review_date": "15/07/2024"
+            },
+            {
+                "review_score": 9,
+                "review_date": "20/06/2024"
+            },
+            {
+                "review_score": 10,
+                "review_date": "18/06/2024"
+            },
+            {
+                "review_score": 10,
+                "review_date": "01/06/2024"
+            },
+            {
+                "review_score": 9,
+                "review_date": "24/05/2024"
+            },
+            {
+                "review_score": 10,
+                "review_date": "09/05/2024"
+            },
+            {
+                "review_score": 10,
+                "review_date": "06/05/2024"
+            },
+            {
+                "review_score": 10,
+                "review_date": "04/05/2024"
+            },
+            {
+                "review_score": 9,
+                "review_date": "02/05/2024"
+            },
+            {
+                "review_score": 10,
+                "review_date": "02/05/2024"
+            },
+            {
+                "review_score": 10,
+                "review_date": "29/04/2024"
+            },
+            {
+                "review_score": 9,
+                "review_date": "21/04/2024"
+            },
+            {
+                "review_score": 10,
+                "review_date": "12/04/2024"
+            },
+            {
+                "review_score": 10,
+                "review_date": "03/04/2024"
+            },
+            {
+                "review_score": 10,
+                "review_date": "30/03/2024"
+            },
+            {
+                "review_score": 10,
+                "review_date": "04/03/2024"
+            },
+            {
+                "review_score": 10,
+                "review_date": "25/02/2024"
+            },
+            {
+                "review_score": 10,
+                "review_date": "17/02/2024"
+            },
+            {
+                "review_score": 10,
+                "review_date": "16/02/2024"
+            },
+            {
+                "review_score": 10,
+                "review_date": "21/01/2024"
+            },
+            {
+                "review_score": 10,
+                "review_date": "07/01/2024"
+            },
+            {
+                "review_score": 10,
+                "review_date": "07/01/2024"
+            },
+            {
+                "review_score": 10,
+                "review_date": "07/01/2024"
+            },
+            {
+                "review_score": 10,
+                "review_date": "06/01/2024"
+            },
+            {
+                "review_score": 10,
+                "review_date": "29/12/2023"
+            },
+            {
+                "review_score": 9,
+                "review_date": "11/12/2023"
+            }
+        ]
+    }
+]
